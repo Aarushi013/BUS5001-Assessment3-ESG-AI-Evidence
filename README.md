@@ -33,4 +33,23 @@ A transparent rule-based Python classifier was developed as a baseline compariso
 - `Q3_ESG_Message_Triage_RuleBased_Baseline.ipynb` – Python rule-based baseline and test scenarios.
 - `Q3_Evidence/` – prompt screenshots, LLM outputs and baseline comparison evidence.
 
-Q4 experiment evidence will also be added to this repository.
+## Q4 – NotebookLM ESG Reporting Standards Experiment
+
+NotebookLM was evaluated using three official sustainability-reporting sources: IFRS S1, IFRS S2 and GRI 1: Foundation 2021.
+
+### Features tested
+1. Source-grounded question answering and inline citations.
+2. Recognition of unsupported claims and missing evidence.
+3. Structured Data Table generation for framework comparison.
+4. Executive briefing generation from selected sources.
+
+### Key findings
+- NotebookLM produced clear comparisons of IFRS S1, IFRS S2 and GRI 1 with inline source citations.
+- When asked to identify the best framework for La Trobe University and provide an exact implementation cost, it correctly stated that the selected sources did not contain enough evidence rather than inventing an answer.
+- The Data Table feature efficiently structured purpose, audience, scope, materiality perspective and disclosure focus across the three standards.
+- Some generated fields, such as likely use in a briefing, were explicitly inferred and therefore require human verification rather than being treated as direct source evidence.
+- The executive briefing feature produced concise, source-grounded synthesis suitable as a starting point for academic or organisational analysis.
+- NotebookLM remains dependent on the quality and completeness of the uploaded sources, so human review and source verification remain necessary.
+
+### Q4 Evidence
+The `Q4_Evidence/` folder contains screenshots of the NotebookLM source setup, source-grounded responses, citation behaviour, limitation testing, structured comparison and executive briefing generation.
